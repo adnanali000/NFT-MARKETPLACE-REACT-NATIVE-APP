@@ -8,7 +8,8 @@ const FocusedStatusBar = ({ backgroundColor, barStyle = "dark-content" }) => {
 
   const insets = useSafeAreaInsets();
 
-  return isFocused ? Platform.OS == 'ios' ? (
+  return isFocused ? 
+  Platform.OS == 'ios' ? (
     <View style={{ height: insets.top, backgroundColor }}>
       <StatusBar
         animated={true}
