@@ -49,7 +49,7 @@ const Details = ({ route, navigation }) => {
         justifyContent: 'center',
         alignItems: 'center',
         paddingVertical: SIZES.font,
-        backgroundColor: 'rgba(255,255,255,0.5)',
+        // backgroundColor: 'rgba(255,255,255,0.5)',
         zIndex: 1
       }}>
         <RectButton minWidth={170} fontSize={SIZES.large} {...SHADOWS.dark} />
@@ -66,7 +66,7 @@ const Details = ({ route, navigation }) => {
             <DetailsHeader data={data} navigation={navigation} />
             <SubInfo />
             <View style={{padding:SIZES.font}}>
-              <DetailDesc />
+              <DetailDesc data={data} />
             </View>
           </React.Fragment>
         )}
