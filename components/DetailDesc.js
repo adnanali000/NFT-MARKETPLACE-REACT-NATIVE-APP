@@ -7,6 +7,7 @@ const DetailDesc = ({ data }) => {
   const [text, setText] = useState(data.description.slice(0, 100));
   const [readMore, setReadMore] = useState(false);
 
+
   return (
     <>
       <View style={{
